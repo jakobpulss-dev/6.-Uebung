@@ -2,33 +2,33 @@ package h2;
 
 public class H2_main {
 	public static boolean compareArrays(int[] a, int[] b) {
-	    if (a.length != b.length) {
-	        return false;
-	    }
+		if (a.length != b.length) {
+			return false;
+		}
 
-	   
-	    for (int i = 0; i < a.length; i++) {
-	        if (a[i] != b[i]) {
-	            return false;
-	        }
-	    }
+		for (int i = 0; i < a.length; i++) {
+			if (a[i] != b[i]) {
+				return false;
+			}
+		}
 
-	    return true; 
-	    
-	} public static void main(String[] args) {
-	    int[] a = {1, 2, 3};
-	    int[] b = {1, 2, 4};
-	    int[] c = {1, 3, 2};
-	    int[] d = {1, 2};
-	    int[] e = {1, 2, 3};
+		return true;
 
-	    System.out.println(compareArrays(a, e)); // true
-	    System.out.println(compareArrays(e, a)); // true
-	    System.out.println(compareArrays(a, b)); // false
-	    System.out.println(compareArrays(a, c)); // false
-	    System.out.println(compareArrays(a, d)); // false
-	    System.out.println(compareArrays(a, a)); // true
 	}
 
+	public static void main(String[] args) {
+		int[] a = { 1, 2, 3 };
+		int[] b = { 1, 2, 4 };
+		int[] c = { 1, 3, 2 };
+		int[] d = { 1, 2 };
+		int[] e = { 1, 2, 3 };
+
+		System.out.println(compareArrays(a, e));
+		System.out.println(compareArrays(e, a));
+		System.out.println(compareArrays(a, b));
+		System.out.println(compareArrays(a, c));
+		System.out.println(compareArrays(a, d));
+		System.out.println(compareArrays(a, a));
+	}
 
 }
